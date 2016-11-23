@@ -975,8 +975,8 @@ end:
 
             if ( !p_sys->b_seekmode && i_dts > p_sys->i_pcr + 2*CLOCK_FREQ )
             {
-                msg_Dbg( p_demux, "that media doesn't look interleaved, will need to seek");
-                p_sys->b_seekmode = true;
+                msg_Dbg( p_demux, "that media doesn't look interleaved, will need to seek (DISABLED!)");
+                //p_sys->b_seekmode = true;
             }
 
             p_sys->i_time = p_sys->i_pcr * p_sys->i_timescale / CLOCK_FREQ;
